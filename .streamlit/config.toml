@@ -1,2 +1,2 @@
-enableCORS=false
-enableXsrfProtection=false
+enableCORS='false'
+enableXsrfProtection='false'
