@@ -18,3 +18,4 @@ enableCORS = false
 enableXsrfProtection = false
 
 enableWebsocketCompression = false
+cookieSecret = '8c5ae09ed57f1e933cc466f5b99ea636d1fc31a2:BAhJIgl0ZXN0BjoGRVQ'
