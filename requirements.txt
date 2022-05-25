@@ -1,3 +1,4 @@
 altair
 pandas
-streamlit
+streamlit==1.9.0
+streamlit-auth0-service==0.0.6
