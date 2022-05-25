@@ -3,7 +3,6 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-import os
 from streamlit_auth0_service.auth0_service import StreamlitAuth0Service
 
 """
@@ -16,10 +15,8 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-ORG_ID = os.environ['ORG_ID']
-
 auth_service = StreamlitAuth0Service()
-is_authorized = auth_service.is_authorized(ORG_ID)
+is_authorized = auth_service.is_authorized()
 
 if not is_authorized:
     st.write("Unauthorized!")
