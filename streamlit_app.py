@@ -41,5 +41,17 @@ def run():
                         .encode(x='x:Q', y='y:Q'))
 
 
+def hide_streamlit_style():
+    hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
+    st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 if __name__ == '__main__':
+    hide_streamlit_style()
     run()
