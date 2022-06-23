@@ -1,4 +1,4 @@
 altair
 pandas
 streamlit==1.9.0
-streamlit-auth0-service==0.0.9
+streamlit-auth0-service

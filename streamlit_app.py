@@ -3,14 +3,14 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-from streamlit_auth0_service.guard import authorized
+from atlasai.streamlit.auth.guard import authorized
 
 
 @authorized
 def run():
-    st.write("")
+    st.write("#### Hello ", get_user_name(), "!")
     """
-    # Welcome to Streamlit!
+    ## Welcome to Streamlit!
     
     Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
     
@@ -50,6 +50,13 @@ def hide_streamlit_style():
                 </style>
                 """
     st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
+def get_user_name():
+    if 'user' in st.session_state:
+        return st.session_state['user']['name']
+    else:
+        return ''
 
 
 if __name__ == '__main__':
