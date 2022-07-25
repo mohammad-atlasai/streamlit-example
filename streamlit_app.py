@@ -40,6 +40,9 @@ def run():
                         .mark_circle(color='#0068c9', opacity=0.5)
                         .encode(x='x:Q', y='y:Q'))
 
+    st.write("Session State:")
+    st.write(st.session_state)
+
 
 def hide_streamlit_style():
     hide_st_style = """
