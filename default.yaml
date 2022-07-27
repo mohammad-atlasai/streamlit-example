@@ -1,7 +1,7 @@
 runtime: custom
 env: flex
 service: default
-service_account: streamlit-deployment@mohammad-sandbox-345817.iam.gserviceaccount.com
+service_account: local-demand-intel-service@mohammad-sandbox-345817.iam.gserviceaccount.com
 
 manual_scaling:
   instances: 1
