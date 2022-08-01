@@ -10,8 +10,8 @@ env:
   RUN_REGION: us-west1
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
-  WORKFLOW: ${{GITHUB_WORKFLOW}}
-  WORKSPACE: ${{GITHUB_WORKSPACE}}
+  WORKFLOW: ${{ $GITHUB_WORKFLOW }}
+  WORKSPACE: ${{ $GITHUB_WORKSPACE }}
 
 jobs:
   Print:
