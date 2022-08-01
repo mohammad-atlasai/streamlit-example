@@ -22,6 +22,8 @@ jobs:
       - name: Print info
         run: |
           echo $GITHUB_WORKFLOW
+          print($GITHUB_SHA)
+          echo $GITHUB_SHA
 #          env
 #          echo GITHUB_WORKFLOW: ${{env.WORKFLOW}}
 #          echo GITHUB_WORKSPACE: ${{env.WORKSPACE}}
