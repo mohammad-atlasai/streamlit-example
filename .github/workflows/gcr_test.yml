@@ -12,10 +12,6 @@ env:
   SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
 
 jobs:
-  Print:
-    name: display info
-    runs-on: ubuntu-latest
-
   deploy:
     name: Deploy to Cloud Run
     runs-on: ubuntu-latest
