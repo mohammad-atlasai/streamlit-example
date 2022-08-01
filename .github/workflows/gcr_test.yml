@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Print info
         run: |
-          $GITHUB_WORKFLOW
+          echo $GITHUB_WORKFLOW
 #          env
 #          echo GITHUB_WORKFLOW: ${{env.WORKFLOW}}
 #          echo GITHUB_WORKSPACE: ${{env.WORKSPACE}}
