@@ -19,10 +19,9 @@ jobs:
     steps:
       - name: Print info
         run: |
-          echo Env path: ${$env:PATH}
-          echo GITHUB_WORKSPACE: ${$GITHUB_WORKSPACE}
-          echo GITHUB_WORKFLOW: ${$GITHUB_WORKFLOW}
-        shell: powershell
+          echo Env path: ${{$env:PATH}}
+          echo GITHUB_WORKSPACE: ${{$GITHUB_WORKSPACE}}
+          echo GITHUB_WORKFLOW: ${{$GITHUB_WORKFLOW}}
 
   deploy:
     name: Deploy to Cloud Run
